@@ -1,65 +1,44 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Ninja List | Home</title>
+        <meta name='keywords' content='ninjas' />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <div>
+        <h1 className={styles.title}>Home Page</h1>
+        <p className={styles.text}>
+          Lover is the seventh studio album by American singer-songwriter Taylor
+          Swift, released on August 23, 2019, through Republic Records. It is
+          her first album after parting ways with her former label Big Machine
+          Records. As the executive producer, Swift enlisted producers Jack
+          Antonoff, Louis Bell, Frank Dukes, and Joel Little for the project.
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <p className={styles.text}>
+          Described by Swift as "a love letter to love itself", Lover also
+          incorporates political themes such as feminism, disillusionment and
+          LGBT rights, aside guest features from the Dixie Chicks and Panic! at
+          the Disco. The album is primarily a retro-styled pop record that
+          combines synth-pop, electropop and pop rock with country, punk, funk,
+          and folk elements. It was supported by four singles: "Me!", "You Need
+          to Calm Down", "Lover", and "The Man", the first three of which
+          reached the top 10 on the Billboard Hot 100. All of its 18 tracks
+          charted on the Hot 100, breaking the all-time record for the most
+          simultaneous entries. Lover topped the charts in Canada, Australia,
+          Ireland, New Zealand, Portugal, Spain, the United Kingdom, the United
+          States and many others. It was Swift's sixth number-one album on the
+          Billboard 200, and was certified double platinum. Selling 3.2 million
+          copies in 2019, Lover was the world's best-selling studio album of the
+          year.
+        </p>
+        <Link href='/ninjas'>
+          <a className={styles.btn}>See Ninja Listing!</a>
+        </Link>
+      </div>
+    </>
   )
 }
